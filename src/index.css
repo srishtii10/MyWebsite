@@ -1,0 +1,64 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Brugty';
+  src: url('./fonts/Brugty DEMO.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Morganite';
+  src: url('./assets/fonts2/Morganite-Black.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* body{
+  background-image: url("../images/background.jpg");
+ 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Ensure the content stays above the pseudo-element */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Apply the same background image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(3px); /* Adjust the blur level here */
+  z-index: -1; /* Send the blurred background behind the text */
+}
+.nav{
+  position: fixed;
+  top: 4px;
+}
+
+.bg-pink{
+  background-image: url("../images/pink-bg.jpg");
+  opacity: 80%;
+}
+.contactform{
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+}
+.capsule{
+  background-image: url("../images/purple2.jpg");
+}
+
