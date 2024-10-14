@@ -1,10 +1,7 @@
-
-
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -23,30 +20,39 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='nav w-full h-16 p-3 flex items-center justify-center'>
-        <div className='flex w-full justify-between gap-10 px-8'>
-          <div className='h-10 w-10 inline-block'>
-            <img className='w-full h-full object-cover' src="../../images/S-letter-pink.png" alt="logo" />
+      <nav className="nav w-full h-16 p-3 flex items-center justify-center">
+        <div className="flex w-full justify-between gap-10 px-8">
+          <div className="h-10 w-10 inline-block">
+            <img
+              className="w-full h-full object-cover"
+              src="https://github.com/deepanshuxharry/images/blob/main/s-letter-pink.png?raw=true"
+              alt="logo"
+            />
           </div>
 
           <div className="relative inline-block text-left">
             {toggle === false ? (
               <GiHamburgerMenu
                 onClick={() => setToggle(true)}
-                style={{ color: 'rgb(179, 40, 108)' }}
-                className='sm:hidden text-3xl cursor-pointer text-bold'
+                style={{ color: "rgb(179, 40, 108)" }}
+                className="sm:hidden text-3xl cursor-pointer text-bold"
               />
             ) : (
               <AiOutlineClose
                 onClick={() => setToggle(false)}
-                style={{ color: 'rgb(179, 40, 108)' }}
-                className='sm:hidden text-3xl cursor-pointer text-bold'
+                style={{ color: "rgb(179, 40, 108)" }}
+                className="sm:hidden text-3xl cursor-pointer text-bold"
               />
             )}
 
             {toggle && (
               <div className="absolute sm:hidden right-0 z-10 w-48 mt-2 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 bg-white">
-                <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                <div
+                  className="py-1"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu"
+                >
                   {/* Close menu after clicking a link */}
                   <Link
                     to="about"
@@ -119,7 +125,10 @@ const Navbar = () => {
           </div>
 
           {/* Normal links for larger screens */}
-          <ul style={{ color: 'rgb(179, 40, 108)' }} className='hidden text-3xl font-bold sm:flex gap-9 justify-end w-1/2'>
+          <ul
+            style={{ color: "rgb(179, 40, 108)" }}
+            className="hidden text-3xl font-bold sm:flex gap-9 justify-end w-1/2"
+          >
             <Link
               to="about"
               smooth={true}

@@ -23,7 +23,7 @@
 } */
 
 body {
-  background-image: url("../images/background.jpg");
+  background-image: url("https://github.com/deepanshuxharry/images/blob/main/background.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -50,15 +50,12 @@ body::before {
   top: 4px;
 }
 
-.bg-pink{
-  background-image: url("../images/pink-bg.jpg");
-  opacity: 80%;
-}
+
 .contactform{
-  background-image: url("../images/background.jpg");
+  background-image: url("https://github.com/deepanshuxharry/images/blob/main/background.jpg?raw=true");
   background-repeat: no-repeat;
 }
 .capsule{
-  background-image: url("../images/purple2.jpg");
+  background-image: url("https://github.com/deepanshuxharry/images/blob/main/purple2.jpg?raw=true");
 }
 
