@@ -71,19 +71,18 @@ const Intro = () => {
             </div>
           </div>
 
-          {/* <div className="mx-auto w-3/5 text-start font-bold text-xl">
+          <div className="mx-auto w-3/5 text-start font-bold text-xl">
             <h1>
-              You can view my RESUME{" "}
+              Want to see my Resume?{" "}
               <a
                 className="underline"
-                href="https://drive.google.com/file/d/132Ck-OGZVCNJvIKZmTbRx8edblT-9mxY/view?usp=sharing"
+                href="public\srishti_resume.pdf"
                 target="_blank"
               >
-                here
+                Click here
               </a>
-              .
             </h1>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
