@@ -71,7 +71,7 @@ const Intro = () => {
             </div>
           </div>
 
-          <div className="mx-auto w-3/5 text-start font-bold text-xl">
+          {/* <div className="mx-auto w-3/5 text-start font-bold text-xl">
             <h1>
               You can view my RESUME{" "}
               <a
@@ -83,7 +83,7 @@ const Intro = () => {
               </a>
               .
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

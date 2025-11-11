@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Taship from "./Taship";
+import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +44,45 @@ const Experience = () => {
             EXPERIENCES
           </h1>
         </div>
-        <Taship />
+        <>
+          <ExperienceCard
+            location="Bengaluru (Hybrid)"
+            duration="Jan 2025 - Present"
+            title="Full Stack Developer Intern"
+            company="CAST Software"
+            points={[
+              "Took complete ownership of developing and delivering major frontend features, including the Pathfinder module - a complex functionality that visualizes paths between nodes on the application graph.",
+              "Designed and implemented the UI as per product specifications, enabling users to select source and target nodes through modals and dynamically visualize paths based on selected modes (shortest path or all paths).",
+              "Managed complex state interactions using Redux and Redux-Saga, leveraging generator and watcher functions to handle asynchronous API calls and real-time UI updates.",
+              "Implemented multiple dialog boxes to handle API failures, timeouts, and dynamic path adjustments, ensuring a seamless user experience.",
+              "Improved app performance by 20% by optimizing OGMA-based features and removing redundant logic.",
+              "Built and maintained scalable frontend features using React and Redux, enhancing responsiveness and maintainability.",
+              "Took ownership of Cypress API testing, developing and executing automated backend validation suites for critical workflows.",
+              "Reduced frontend bugs by 30% and increased overall test coverage by 25% through comprehensive unit and integration tests using React Testing Library and Enzyme.",
+              "Collaborated closely with backend developers, QA, and designers to ensure smooth sprint execution, timely delivery, and adherence to design goals.",
+              "Tech Stack: React, Redux, Redux-Saga, JavaScript, OGMA, Cypress, Enzyme, React Testing Library, Jira, GitLab.",
+            ]}
+            skills={[
+              "ReactJS",
+              "Redux",
+              "Redux-Saga",
+              "Ogma",
+              "Cypress",
+              "JIRA",
+              "JavaScript",
+              "Performance Optimization",
+            ]}
+          />
+
+          <ExperienceCard
+            location="Remote"
+            duration="Jan 2024 - April 2024"
+            title="Teaching Assistant"
+            company="Coding Ninjas"
+            description="Mentored over 280+ students, enhancing their understanding of Java programming and Data Structures & Algorithms. Assisted them in identifying and fixing bugs in their code, fostering their problem-solving skills and coding proficiency. This experience improved my communication skills by effectively explaining complex concepts to students."
+            skills={["Java", "DSA", "Mentorship", "Communication"]}
+          />
+        </>
       </div>
     </>
   );

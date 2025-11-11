@@ -3,21 +3,28 @@ import Capsule from "./Capsule";
 
 const Skills = () => {
   const arr = [
-    "JAVA",
-    "DSA",
-    "Problem Solving",
-    "JavaScript",
-    "NodeJS",
-    "MongoDB",
     "ReactJS",
-    "NextJS",
-    "MySQL",
+    "Redux",
+    "JavaScript",
+    "JAVA",
     "CSS",
     "HTML",
+    "NodeJS",
     "ExpressJS",
     "Tailwind",
     "Bootstrap",
+    "Cypress",
+    "RTL",
+    "Enzyme",
+    "Ogma",
+    "MongoDB",
     "C/C++",
+    "Git",
+    "Jira",
+    "GitLab",
+    "DSA",
+    "Jest",
+    "Communication",
   ];
   const [skills, setSkills] = useState(arr);
   const [isVisible, setIsVisible] = useState(false);
