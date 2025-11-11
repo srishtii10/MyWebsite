@@ -76,7 +76,7 @@ const Intro = () => {
               Want to see my Resume?{" "}
               <a
                 className="underline"
-                href="public\srishti_resume.pdf"
+                href="\srishti_resume.pdf"
                 target="_blank"
               >
                 Click here
