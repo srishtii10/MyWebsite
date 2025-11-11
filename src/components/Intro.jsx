@@ -47,11 +47,11 @@ const Intro = () => {
                 style={{ color: "rgb(190 70 130)" }}
                 className="sm:w-[55%] w-[90%] text-lg text-center leading-7 font-semibold mx-auto mt-4"
               >
-                My name is Srishti and I'm an aspiring computer science graduate
-                with a strong foundation in software development, data
-                structures, and algorithms. Passionate about leveraging coding
-                skills to solve real-world problems and continuously learning
-                emerging technologies.
+                My name is Srishti and I'm a computer science graduate with a
+                strong foundation in software development, data structures, and
+                algorithms. Passionate about leveraging coding skills to solve
+                real-world problems and continuously learning emerging
+                technologies.
               </p>
               <p
                 style={{ color: "rgb(190 70 130)" }}

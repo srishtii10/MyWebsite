@@ -6,6 +6,7 @@ const Skills = () => {
     "ReactJS",
     "Redux",
     "JavaScript",
+    "Redux-Saga",
     "JAVA",
     "CSS",
     "HTML",
